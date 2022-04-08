@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <style>
+        h1#heading
+        {
+            margin-left: 35px;
+        }
+        .innerbox
+        {
+            padding: 15px;
+        }
+        .container
+        {
+            margin-left: 600px;
+            background: yellowgreen;
+            width: 300px;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading">Tip Calculator</h1>
+        <div class="innerbox">
+            <label id="heading">Amount:</label>
+            <input type="text" id="place" placeholder="Bill for food">
+            <br><br>
+            <label>Tip Amount :</label>
+            <input type="text" id="tip">
+            <br><br>
+            <label>Total Bill:</label>
+            <input type="text" id="tatl" placeholder="Total Amount to be paid">
+        </div>
+        <br><br>
+        <button onclick="fun()">Calculate</button>
+        <h2><b>Note:</b></h2>
+        <ul>
+            <li>If the amount is less than 1000 than tip percentage is 5%</li>
+            <li>If the amount is greater than 1000 than tip percentage is 10%</li>
+        </ul>
+
+    </div>
+</body>
+<script src="logic.js"></script>
+</html>
